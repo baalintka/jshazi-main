@@ -22,7 +22,7 @@ function init() {
   THelem.on("click", function () {
     let torles = event.target.id;
     if (torles=='kukaz') {
-        OBJEKTUMLISTA.splice('sor1','sor2','sor3','sor4',1)
+        OBJEKTUMLISTA.splice('sor1','sor2','sor3',1)
         console.log(OBJEKTUMLISTA);
     }
     
@@ -40,13 +40,13 @@ function tablazatkeszit(OBJEKTUMLISTA) {
     osszerak +=
       "<td id='sor1' style='border: 1px solid black'>" +
       OBJEKTUMLISTA[index].név +
-      "</td id='sor2'>";
+      "</td>";
     osszerak +=
-      "<td id='sor3' style='border: 1px solid black'>" +
+      "<td id='sor2' style='border: 1px solid black'>" +
       OBJEKTUMLISTA[index].fajta +
       "</td>";
     osszerak +=
-      "<td id='sor4' style='border: 1px solid black'>" +
+      "<td id='sor3' style='border: 1px solid black'>" +
       OBJEKTUMLISTA[index].kor +
       "</td>";
       osszerak +=
