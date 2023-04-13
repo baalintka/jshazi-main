@@ -3,9 +3,13 @@ header h1{
 }
 article{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
 }
 img{
     width: 70%;
 }
 nav{text-align: center;}
+.card{
+    margin-top: 10px;
+    margin-left: 10px;
+}
