@@ -32,7 +32,7 @@ function tablazatkeszit(OBJEKTUMLISTA) {
     
   let osszerak = "";
   for (let index = 0; index < OBJEKTUMLISTA.length; index++) {
-    osszerak+= "<div class='col-md-4'>" +
+    osszerak+= "<div class='row-md-3'>" +
     "<div class='card'>" +
     "<div class='card-body'>" +
     "<h5 class='card-title'>" +
@@ -48,7 +48,7 @@ function tablazatkeszit(OBJEKTUMLISTA) {
     "</p>" +
     "</div>" +
     "<div class='card-footer'>" +
-    "<button id='kukaz' class='btn btn-danger'><img src='trash.jpg' alt='kuka' class='kuka'></button>" +
+    
     "</div>" +
     "</div>" +
     "</div>";
