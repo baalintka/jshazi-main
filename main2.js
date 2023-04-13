@@ -49,7 +49,7 @@ function tablazatkeszit(OBJEKTUMLISTA) {
       OBJEKTUMLISTA[index].kor +
       "</td>";
     osszerak +=
-      `<td> <button id='${index}' class='torles' class='btn btn-danger'><img src='trash.jpg' alt='kuka' class='kuka'></button> 
+      `<td id="lel"> <button id='${index}' class='torles' class='btn btn-danger'><img src='trash.jpg' alt='kuka' class='kuka'></button> 
       </td>`;
     osszerak += "</tr>";
   }
