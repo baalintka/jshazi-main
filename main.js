@@ -19,41 +19,49 @@ function init() {
     console.log(OBJEKTUMLISTA);
     init();
   });
-  THelem.on("click", function () {
-    let torles = event.target.id;
-    if (torles=='kukaz') {
-        OBJEKTUMLISTA.splice('sor1','sor2','sor3',1)
-        console.log(OBJEKTUMLISTA);
-    }
-    
-    
+  const torlesGombok = $("button.btn-danger");
+  torlesGombok.on("click", function (event) {
+    const adatIndex = $(event.target).closest(".card").index();
+    OBJEKTUMLISTA.splice(adatIndex, 1);
     init();
   });
 }
 
 function tablazatkeszit(OBJEKTUMLISTA) {
-  let osszerak =
-    "<table class='table table-dark table-striped'style='border: 2px solid black'>";
-  osszerak += "<tr><th id='név'>Név:</th><th id='fajta'>fajta:</th><th id='kor'>kor:</th>";
+  
+    
+  let osszerak = "";
   for (let index = 0; index < OBJEKTUMLISTA.length; index++) {
-    osszerak += "<tr>";
-    osszerak +=
-      "<td id='sor1' style='border: 1px solid black'>" +
-      OBJEKTUMLISTA[index].név +
-      "</td>";
-    osszerak +=
-      "<td id='sor2' style='border: 1px solid black'>" +
-      OBJEKTUMLISTA[index].fajta +
-      "</td>";
-    osszerak +=
-      "<td id='sor3' style='border: 1px solid black'>" +
-      OBJEKTUMLISTA[index].kor +
-      "</td>";
-      osszerak +=
-      "<td id='kukaz' style='border: 1px solid black'>"+ kukaKep+
-      "</td>";
-    osszerak += "</tr>";
+    osszerak+= "<div class='col-md-4'>" +
+    "<div class='card'>" +
+    "<div class='card-body'>" +
+    "<h5 class='card-title'>" +
+    OBJEKTUMLISTA[index].név +
+    "</h5>" +
+    "<p class='card-text'>" +
+    "<strong>Fajta: </strong>" +
+    OBJEKTUMLISTA[index].fajta +
+    "</p>" +
+    "<p class='card-text'>" +
+    "<strong>Kor: </strong>" +
+    OBJEKTUMLISTA[index].kor +
+    "</p>" +
+    "</div>" +
+    "<div class='card-footer'>" +
+    "<button id='kukaz' class='btn btn-danger'><img src='trash.jpg' alt='kuka' class='kuka'></button>" +
+    "</div>" +
+    "</div>" +
+    "</div>";
   }
-  osszerak += "</table>";
+  
   return osszerak;
+}
+function divek(OBJEKTUMLISTA){
+  let hozzad="";
+  hozzad+="<div class='row'>";
+  for (let index = 0; index < OBJEKTUMLISTA.length; index++) {
+    hozzad += tablazatkeszit(OBJEKTUMLISTA[index]);
+  }
+  hozzad += "</div>";
+  return hozzad;
 }
