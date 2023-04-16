@@ -2,17 +2,24 @@ header h1{
     text-align: center;
 }
 article{
+    margin-left: 50px;
+    margin-right: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
 }
 img{
     width: 70%;
-    height: 130px;
+    
 }
-nav{text-align: center;}
+nav{text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .card{
     margin-top: 10px;
     margin-left: 10px;
 }
-
+input[type="text"]{
+    width :100%;
+}
 
