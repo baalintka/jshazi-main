@@ -24,6 +24,10 @@ img{
 nav{text-align: center;
     margin: 5px;
 }
+nav a{
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .card{
     margin :5px;
     
