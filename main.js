@@ -44,10 +44,10 @@ function tablazatkeszit(OBJEKTUMLISTA) {
     "</p>" +
     "<p class='card-text'>" +
     "<strong>Kor: </strong>" +
-    OBJEKTUMLISTA[index].kor +
+    OBJEKTUMLISTA[index].kor +  
     "</p>" +
     "</div>" +
-    "<div class='card-footer'>" +
+    "<div class='card-footer'>" + OBJEKTUMLISTA[index].kép +
     
     "</div>" +
     "</div>" +
