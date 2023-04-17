@@ -1,4 +1,6 @@
-header{text-align: center;}
+header{text-align: left;
+    margin-left: 10px;
+}
 nav{text-align: right;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -8,9 +10,17 @@ nav{text-align: right;
     background-color: grey;  
     font-style:initial;
      
-
-
+}
+main{
+    background-color: blueviolet;
+    margin: 20px;
 }
 #lel{
     text-align: center;
+}
+input{
+    
+        border-radius: 20px;
+        padding: 10px;
+      
 }
