@@ -27,10 +27,11 @@ img{
     border-radius: 20px;
     padding: 10px;
   }
-nav{text-align: center;
+nav{text-align: right;
     margin: 5px;
 }
 nav a{
+    
     color: yellow;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

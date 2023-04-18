@@ -2,18 +2,23 @@
 body{
     background-color: rgba(2, 223, 252, 0.884);
 }
-header{text-align: center;
-    margin-left: 10px;
+h1{
+    text-align: center;
 }
+
 nav{text-align: right;
     margin-bottom: 20px;
     margin-right: 20px;
 }
  a{color: black;
-    border: solid  black 4px;
-    background-color: grey;  
+    border: solid  rgb(241, 234, 234) 4px;
+    background-color: antiquewhite;  
     font-style:initial;
-     
+    
+}
+.aa{
+    text-align: right;
+    margin-right: 5px;
 }
 article{
     margin: 40px;
@@ -27,9 +32,16 @@ main{
 #lel{
     text-align: center;
 }
+
 #adat{margin-top: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#adat1{
+    border-radius: 3cqb;
+    padding: 5px;
+    margin: 5px;
+    background-color: antiquewhite;
 }
 .prompt {
     background-color: #f2f2f2;
@@ -43,8 +55,17 @@ main{
   }
 #gomb{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
   }
   header button{
-    width :50%;
+    width: 50%;
+    margin: auto;
   }
+  header input{
+    margin: 5px;
+    margin-left: 5px;
+    width: 70%;
+    
+  }
+  
