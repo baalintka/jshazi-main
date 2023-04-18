@@ -17,7 +17,7 @@ export function rendezesSzovegszerint(OBJEKTUMLISTA,kulcs){
 }
 
 export function objektumrendezes(OBJEKTUMLISTA,kulcs){
-    if (typeof kulcs=="number") {
+    if (typeof kulcs=="korszerint") {
         rendezesSzamszerint(OBJEKTUMLISTA,kulcs);
     }else{
         rendezesSzovegszerint(OBJEKTUMLISTA,kulcs);

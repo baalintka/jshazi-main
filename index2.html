@@ -17,8 +17,37 @@
 </head>
 <body>
     <main>
-        <header><h1>Adatok listázása</h1>
-            <input type="text" type=" checkbox">
+        <header><h1>Kutyák listája</h1>
+            <div id="adat1">
+                <form  id="adat">
+                    <div>
+                        <label for="nev">Kutya neve:</label>
+                        <input type="text" id="nev" name="nev">
+                    </div>
+                    <div>
+                        <label for="fajta">Kutya fajtája:</label>
+                        <input type="text" id="fajta" name="fajta">
+                    </div>
+                    <div>
+                        <label for="kor">Kutya kora:</label>
+                        <input type="text" id="kor" name="kor">
+                    </div>  
+                    
+                    
+                
+                </form>
+            </div>
+            
+            <div  id="gomb">
+            
+                <button id="nevszerint" type="button">Név rendezés</button>
+            
+                <button id="fajtaszerint" type="button">Fajta rendezés</button>
+            
+                <button id="korszerint" type="button">Kor rendezés</button>
+                
+            
+            </div>
             
         </header>
         <nav>

@@ -1,4 +1,8 @@
-header{text-align: left;
+
+body{
+    background-color: rgba(2, 223, 252, 0.884);
+}
+header{text-align: center;
     margin-left: 10px;
 }
 nav{text-align: right;
@@ -11,18 +15,21 @@ nav{text-align: right;
     font-style:initial;
      
 }
+article{
+    margin: 40px;
+    
+}
 main{
     background-color: blueviolet;
     margin: 20px;
+    border-radius: 5%;
 }
 #lel{
     text-align: center;
 }
-input{
-    
-        border-radius: 20px;
-        padding: 10px;
-      
+#adat{margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .prompt {
     background-color: #f2f2f2;
@@ -33,4 +40,11 @@ input{
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 0px 0px 10px #888;
+  }
+#gomb{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  header button{
+    width :50%;
   }

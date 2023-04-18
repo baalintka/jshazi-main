@@ -1,8 +1,8 @@
 import { OBJEKTUMLISTA } from "./adat.js";
-import { objektumrendezes, rendezesSzamszerint } from "./rendezes.js";
+import { objektumrendezes} from "./rendezes.js";
 const kukaKep = `<img src="trash.jpg" alt="kep" class="kuka">`;
 $(document).ready(function () {
-  let jelszo = "heble"; 
+  let jelszo = ""; 
   let beirt= prompt("Add meg a jelszót:");
   
   while (beirt !== jelszo) {
@@ -17,8 +17,11 @@ function init() {
   const tablazat = tablazatkeszit(OBJEKTUMLISTA);
   ELEM.html(tablazat);
 
-  const THelem = $("th");
-  THelem.on("click", function () {
+  const gombnyomas=$("#gomb");
+  
+  
+  
+  gombnyomas.on("click", function () {
     let kulcs = event.target.id;
     console.log(kulcs);
     objektumrendezes(OBJEKTUMLISTA, kulcs);
