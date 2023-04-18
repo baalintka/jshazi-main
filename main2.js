@@ -2,6 +2,14 @@ import { OBJEKTUMLISTA } from "./adat.js";
 import { objektumrendezes, rendezesSzamszerint } from "./rendezes.js";
 const kukaKep = `<img src="trash.jpg" alt="kep" class="kuka">`;
 $(document).ready(function () {
+  let jelszo = "heble"; 
+  let beirt= prompt("Add meg a jelszót:");
+  
+  while (beirt !== jelszo) {
+    beirt = prompt("Hibás jelszó, próbáld újra:");
+  }
+  
+  
   init();
 });
 function init() {

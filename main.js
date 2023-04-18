@@ -37,6 +37,7 @@ function kereses() {
   }
 }
 
+
 function tablazatkeszit(OBJEKTUMLISTA) {
   let osszerak = "";
   for (let index = 0; index < OBJEKTUMLISTA.length; index++) {
