@@ -1,9 +1,14 @@
+body{
+    background-color: rgba(2, 223, 252, 0.884);
+}
 header h1{
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgba(238, 255, 0, 0.993);
 }
 main{
-    margin-left: 60px;
-    margin-right: 50px;
+    margin:30px;
     background-color: blueviolet;
 }
 article{
