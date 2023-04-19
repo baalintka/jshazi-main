@@ -27,7 +27,7 @@ article{
 main{
     background-color: blueviolet;
     margin: 20px;
-    border-radius: 5%;
+    border-radius: 8px;
 }
 #lel{
     text-align: center;
@@ -37,13 +37,32 @@ main{
     
 }
 #adat1{
-    border-radius: 3cqb;
+    border-radius: 8px;
     padding: 5px;
     margin: 5px;
     background-color: antiquewhite;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+#ujkutya-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px;
+    padding: 5px;
+}
+#ujkutyaa{
+    width: 90px;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    margin-right: 5px;
+    
+}
+#ujkutya-hozzaadas{
+    margin-top: 24px;
+    
+}
+
 .prompt {
     background-color: #f2f2f2;
     color: black;
@@ -56,7 +75,7 @@ main{
   }
 #gomb{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
   }
   header button{
@@ -68,5 +87,35 @@ main{
     margin-left: 5px;
     width: 70%;
     
+  }
+  h4{
+    text-align: center;
+}
+
+  
+  @media only screen and (max-width: 650px) {
+    #adat1{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    #ujkutya-form{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    
+
+  }
+  @media only screen and (max-width: 650px) {
+    #gomb{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .aa{
+        text-align: center;
+        
+    }
   }
   

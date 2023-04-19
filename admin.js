@@ -2,14 +2,7 @@ import { OBJEKTUMLISTA } from "./adat.js";
 import { objektumrendezes } from "./rendezes.js";
 
 $(document).ready(function () {
-  /*let jelszo = ""; 
-  let beirt= prompt("Add meg a jelszót:");
   
-  while (beirt !== jelszo) {
-    beirt = prompt("Hibás jelszó, próbáld újra:");
-  }
-  */
-
   init();
 });
 function init() {
@@ -71,6 +64,8 @@ function tablazatkeszit(OBJEKTUMLISTA) {
 function ujkutyaKeszit() {
   let rak = "<div id='adat1'>";
   rak += "<form id='ujkutya-form'>";
+  rak += "<div id='ujkutyaa'><p>Új kutya: </p></div>";
+
   rak +=
     "<div><label for='nev'>Kutya neve:</label><input type='text' id='nev' name='nev'></div>";
   rak +=
