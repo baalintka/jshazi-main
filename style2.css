@@ -34,14 +34,15 @@ main{
 }
 
 #adat{margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 }
 #adat1{
     border-radius: 3cqb;
     padding: 5px;
     margin: 5px;
     background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .prompt {
     background-color: #f2f2f2;
