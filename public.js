@@ -9,7 +9,6 @@ function init() {
   const tablazat = tablazatkeszit(OBJEKTUMLISTA);
   ELEM.html(tablazat);
 
-  
   const torlesGombok = $("button.btn-danger");
   torlesGombok.on("click", function (event) {
     const adatIndex = $(event.target).closest(".card").index();
@@ -36,7 +35,6 @@ function kereses() {
     }
   }
 }
-
 
 function tablazatkeszit(OBJEKTUMLISTA) {
   let osszerak = "";

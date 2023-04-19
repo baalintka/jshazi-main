@@ -2,7 +2,6 @@ import { OBJEKTUMLISTA } from "./adat.js";
 import { objektumrendezes } from "./rendezes.js";
 
 $(document).ready(function () {
-  
   init();
 });
 function init() {
@@ -19,9 +18,9 @@ function init() {
   gombnyomas.on("click", function () {
     let kulcs = $(this).attr("id").slice(2);
     console.log(kulcs);
-    
+
     objektumrendezes(OBJEKTUMLISTA, kulcs);
-    
+
     init();
   });
 
