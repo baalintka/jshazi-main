@@ -24,10 +24,11 @@ function init() {
   const gombnyomas = $("#gomb");
 
   gombnyomas.on("click", function () {
-    let kulcs = event.target.id;
+    let kulcs = $(this).attr("id");
     console.log(kulcs);
-    objektumrendezes(OBJEKTUMLISTA, kulcs);
-    console.log(OBJEKTUMLISTA);
+    let masolat = [...OBJEKTUMLISTA];
+    objektumrendezes(masolat, kulcs);
+    console.log(masolat);
     init();
   });
 
@@ -69,25 +70,27 @@ function tablazatkeszit(OBJEKTUMLISTA) {
 }
 function ujkutyaKeszit() {
   let rak = "<div id='adat1'>";
-rak += "<form id='ujkutya-form'>";
-rak += "<div><label for='nev'>Kutya neve:</label><input type='text' id='nev' name='nev'></div>";
-rak += "<div><label for='fajta'>Kutya fajtája:</label><input type='text' id='fajta' name='fajta'></div>";
-rak += "<div><label for='kor'>Kutya kora:</label><input type='text' id='kor' name='kor'></div>";
-rak += "<div><button id='ujkutya-hozzaadas' class=''>Mentés</button></div>";
-rak += "</form></div>";
+  rak += "<form id='ujkutya-form'>";
+  rak +=
+    "<div><label for='nev'>Kutya neve:</label><input type='text' id='nev' name='nev'></div>";
+  rak +=
+    "<div><label for='fajta'>Kutya fajtája:</label><input type='text' id='fajta' name='fajta'></div>";
+  rak +=
+    "<div><label for='kor'>Kutya kora:</label><input type='text' id='kor' name='kor'></div>";
+  rak += "<div><button id='ujkutya-hozzaadas' class=''>Mentés</button></div>";
+  rak += "</form></div>";
 
-const ujkutyaForm = $(rak);
+  const ujkutyaForm = $(rak);
 
-ujkutyaForm.find("#ujkutya-hozzaadas").on("click", function (event) {
-  event.preventDefault();
-  let nev = $("#nev").val();
-  let fajta = $("#fajta").val();
-  let kor = $("#kor").val();
-  let ujKutya = { név: nev, fajta: fajta, kor: kor };
-  OBJEKTUMLISTA.push(ujKutya);
-  init();
-});
+  ujkutyaForm.find("#ujkutya-hozzaadas").on("click", function (event) {
+    event.preventDefault();
+    let nev = $("#nev").val();
+    let fajta = $("#fajta").val();
+    let kor = $("#kor").val();
+    let ujKutya = { név: nev, fajta: fajta, kor: kor };
+    OBJEKTUMLISTA.push(ujKutya);
+    init();
+  });
 
-return ujkutyaForm;
-
+  return ujkutyaForm;
 }

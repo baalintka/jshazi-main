@@ -16,11 +16,10 @@ export function rendezesSzovegszerint(OBJEKTUMLISTA,kulcs){
     })
 }
 
-export function objektumrendezes(OBJEKTUMLISTA,kulcs){
-    if (typeof kulcs=="korszerint") {
-        rendezesSzamszerint(OBJEKTUMLISTA,kulcs);
-    }else{
-        rendezesSzovegszerint(OBJEKTUMLISTA,kulcs);
-
+export function objektumrendezes(OBJEKTUMLISTA, kulcs) {
+    if (!isNaN(OBJEKTUMLISTA[0][kulcs])) {
+      rendezesSzamszerint(OBJEKTUMLISTA, kulcs);
+    } else {
+      rendezesSzovegszerint(OBJEKTUMLISTA, kulcs);
     }
-}
+  }
