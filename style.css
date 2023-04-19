@@ -42,4 +42,18 @@ nav a{
 input[type="text"]{
     width :100%;
 }
+@media only screen and (max-width: 600px) {
+    article{
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+  }
+@media only screen and (max-width: 300px) {
+    article{
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+  }
 
