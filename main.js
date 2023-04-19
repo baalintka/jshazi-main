@@ -46,7 +46,7 @@ function tablazatkeszit(OBJEKTUMLISTA) {
       "<div class='card'>" +
       "<div class='card-body'>" +
       "<h5 class='card-title'>" +
-      OBJEKTUMLISTA[index].név +
+      OBJEKTUMLISTA[index].nev +
       "</h5>" +
       "<p class='card-text'>" +
       "<strong>Fajta: </strong>" +

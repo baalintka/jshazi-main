@@ -21,14 +21,14 @@ function init() {
   ELEM.append(ujkutyus);
   ELEM.append(tablazat);
 
-  const gombnyomas = $("#gomb");
+  const gombnyomas = $(".gomb");
 
   gombnyomas.on("click", function () {
-    let kulcs = $(this).attr("id");
+    let kulcs = $(this).attr("id").slice(2);
     console.log(kulcs);
-    let masolat = [...OBJEKTUMLISTA];
-    objektumrendezes(masolat, kulcs);
-    console.log(masolat);
+    
+    objektumrendezes(OBJEKTUMLISTA, kulcs);
+    
     init();
   });
 
@@ -51,7 +51,7 @@ function tablazatkeszit(OBJEKTUMLISTA) {
     osszerak += "<tr>";
     osszerak +=
       "<td style='border: 1px solid black'>" +
-      OBJEKTUMLISTA[index].név +
+      OBJEKTUMLISTA[index].nev +
       "</td>";
     osszerak +=
       "<td  style='border: 1px solid black'>" +
@@ -87,7 +87,7 @@ function ujkutyaKeszit() {
     let nev = $("#nev").val();
     let fajta = $("#fajta").val();
     let kor = $("#kor").val();
-    let ujKutya = { név: nev, fajta: fajta, kor: kor };
+    let ujKutya = { nev: nev, fajta: fajta, kor: kor };
     OBJEKTUMLISTA.push(ujKutya);
     init();
   });
